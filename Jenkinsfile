@@ -7,5 +7,10 @@ pipeline {
         sh 'wtctl'
       }
     }
+    stage('run the docker') {
+      steps {
+        sh 'echo "run docker ready"'
+      }
+    }
   }
 }
