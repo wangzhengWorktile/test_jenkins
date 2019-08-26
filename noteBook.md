@@ -2,8 +2,6 @@
 
 ### Jenkins
 
-//hello
-
 #### [Jenkins 官方入门指南](https://jenkins.io/zh/doc/pipeline/tour/getting-started/)
 
 ```
@@ -18,7 +16,7 @@ Docker
 ```
 sudo docker run -u root -d --name myjenkinFile -p 8080:8080 -p 50000:50000 -p 25:25 -p 465:465 -v /home/ubuntu/jenkins_home:/var/jenkins_home jenkins/jenkins
 
-ps：单独使用jenkins可以 研发版配套wtctl对docker中运行支持不友好  无法使用
+ps：单独使用jenkins可以 研发版配套wtctl对在docker中运行支持不友好  无法使用
 ```
 
 ### jenkins 构建环境执行脚本
