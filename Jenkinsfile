@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Using Worktile Pipeline') {
       steps {
-        sh 'wtctl --platform=2'
+        sh 'wtctl'
       }
     }
     stage('run the docker') {
