@@ -3,11 +3,22 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
+var ErrorTracking = require('@worktile/wt-tracking-sdk-nodejs').ErrorTracking;
+var Options = require('@worktile/wt-tracking-sdk-nodejs').Options;
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
+
+const et = new ErrorTracking(
+  new Options({
+    appId: '5d5a05951e1fc60b9e57f532',
+    appKey: '8d070144b33e2f356e927145b68ae8ffa4837014',
+    reportMode: 'always',
+    reportMultipleResolves: true,
+    reportUnhandledRejection: true
+  })
+);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
