@@ -9,7 +9,7 @@ pipeline {
     }
     stage('run the docker') {
       steps {
-        sh 'echo "run docker ready"'
+        sh 'echo "run docker problemrc/aaa"'
       }
     }
   }
