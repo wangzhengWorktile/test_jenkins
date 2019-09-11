@@ -9,6 +9,8 @@
 运行环境要求：
 java8
 Docker
+
+安装地址：https://jenkins.io/zh/doc/book/installing/
 ```
 
 ### docker 直接运行 Jenkins 镜像
@@ -23,6 +25,7 @@ ps：单独使用jenkins可以 研发版配套wtctl对在docker中运行支持�
 
 安装 jenkins 插件 ssh publisher
 用 ssh 的方式操作物理机 docker 不推荐 这个方法有点“睿智”
+但是可以用来直接操作生产环境机器 （在不使用 K8s 时候）
 
 ```bash
 cd jenkins_home/workspace/git
