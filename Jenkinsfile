@@ -2,14 +2,7 @@ pipeline {
   agent any
 
   stages {
-    stage('stop the old docker image') {
-      steps {
-        sh 'sudo docker stop express || true \
-            && sudo docker rm express || true \
-            && sudo docker rmi problemrc/aaa \
-            '
-      }
-    }
+    
     stage('Using Worktile Pipeline') {
       steps {
         sh 'wtctl'
