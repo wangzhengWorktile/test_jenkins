@@ -6,7 +6,7 @@ pipeline {
       steps {
         sh 'sudo docker stop express || true \
             && sudo docker rm express || true \
-            && sudo docker rmi problemrc/aaa 
+            && sudo docker rmi problemrc/aaa \
             '
       }
     }
