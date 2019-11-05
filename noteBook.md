@@ -66,3 +66,12 @@ curl -s https://cdn.worktile.com/pipeline/install-wtctl.sh | bash
 ### 开启 github webhooks
 
 jenkins 中 安全配置 勾选匿名用户具有可读权限 关闭 CTRF 拦截
+
+stage('stop the old docker image') {
+steps {
+sh 'sudo docker stop express || true \
+ && sudo docker rm express || true \
+ && sudo docker rmi problemrc/aaa \
+ '
+}
+}
