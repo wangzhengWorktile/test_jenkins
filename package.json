@@ -1,18 +1,19 @@
 {
   "name": "init",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
     "test": "./node_modules/mocha/bin/mocha test"
   },
   "dependencies": {
-    "@worktile/wt-tracking-sdk-nodejs": "0.0.16",
+    "@worktile/wt-tracking-sdk-nodejs": "0.0.18",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
+    "ejs": "2.7.4",
     "morgan": "~1.9.1"
   },
   "devDependencies": {
